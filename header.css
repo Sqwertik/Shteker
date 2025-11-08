@@ -32,6 +32,7 @@ button, a {
 body {
         width: 100%;
         font-size: 30px;
+        font-family: "Jua", sans-serif;
     }
 
     header  {
@@ -430,5 +431,6 @@ body {
         height: 45px;
         font-size: 20px;
     }
+
 
 }
