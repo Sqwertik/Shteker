@@ -37,7 +37,7 @@ body {
 
     header  {
         width: 100%;
-        height: auto;
+        height: 70px;
         padding: 8px 0;
         display: flex;
         justify-content: space-around;
@@ -58,7 +58,7 @@ body {
     }
 
     .logo h2 {
-        font-size: 5vw;
+        font-size: 6vw;
         margin: auto;
         align-items: center;
 
@@ -73,10 +73,10 @@ body {
 
     .search input {
         width: 48vw;
-        height: 30px;
+        height: 40px;
         font-size: 4vw;
-        padding-left: 30px;
-        padding-right: 50px;
+        padding: 0 50px 0 30px;
+        line-height: 30px;
         border-radius: 20px;
         background: url(image\ 16.png) no-repeat 8px center;
         background-size: 20px;
@@ -91,21 +91,25 @@ body {
         gap: 15px;
     }
 
+    
+
     .icons button {
         background: none;
         background-repeat: none;
         padding: 0;
         cursor: pointer;
+        transition: all 0.4s;
     }
 
     .icons img {
         width: 22px;
+        background: none;
     }
 
     header .burger {
         display: block;
-        width: 25px;
-        height: 20px;
+        width: 30px;
+        height: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -124,7 +128,7 @@ body {
 
     header .burger span {
         display: block;
-        height: 4px;
+        height: 5px;
         width: 100%;
         background: #000;
         border-radius: 5px;
@@ -132,7 +136,7 @@ body {
     }
 
     .burger.open span:nth-child(1) {
-        transform: translateY(8px)
+        transform: translateY(10px)
         rotate(45deg);
     }
 
@@ -141,7 +145,7 @@ body {
     }
 
     .burger.open span:nth-child(3) {
-        transform: translateY(-8px) 
+        transform: translateY(-10px) 
         rotate(-45deg);
     }
 
@@ -155,7 +159,7 @@ body {
 
     header .menu {
         position: absolute;
-        top: 45px;
+        top: 75px;
         right: 10px;
         background-color: #A7A7A7;
         border: 1px solid black;
@@ -163,10 +167,9 @@ body {
         height: auto;
         display: flex;
         flex-direction: column;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        gap: 20px;
-        width: 90px;
+        padding: 20px 20px;
+        gap: 30px;
+        width: 180px;
         transition: 0.4s;
         opacity: 0;
     }
@@ -178,42 +181,64 @@ body {
     .mobile-cart,
     .mobile-user {
         background: none;
-        border: none;
+        border: none    ;
         display: flex;
         justify-content: left;
         align-items: center;
+        transition: all 0.4s;
+        
+    }
+
+    .mobile-cart:hover,
+    .mobile-user:hover {
+        transform: scale(1.1);
     }
 
     .mobile-cart img,
     .mobile-user img {
-        width: 22px;
+        width: 40px;
         margin-right: 5px; 
     }
 
+    .mobile-cart span,
+    .mobile-user span {
+        font-family: "Jua", sans-serif;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
     button.light {
+        font-family: "Jua", sans-serif;
         background-color: #fff;
         color: #000;
         padding: 10px 20px;
-        margin: 0px 10px;
+        margin: 20px auto;
         border-radius: 20px;
         border: none;
-        font-size: 10px;
+        font-size: 20px;
         display: flex;
-        justify-content: left;
+        justify-content: center;
+        align-items: center;
         transition: all 0.8s;
+        width: 140px;
+        height: 60px;
     }
 
     button.dark {
+        font-family: "Jua", sans-serif;
         background-color: #000;
         color: #fff;
         padding: 10px 20px;
-        margin: 0px 10px;
+        margin: 20px auto;
         border-radius: 20px;
         border: none;
-        font-size: 10px;
+        font-size: 20px;
         display: flex;
-        justify-content: left;
+        justify-content: center;
+        align-items: center;
         transition: all 0.8s;
+        width: 140px;
+        height: 60px;
     }
 
     button.light:hover,
@@ -241,12 +266,21 @@ body {
         top: 60px;
     }
 
+    .mobile-cart,
+    .mobile-user {
+        border: none;
+    }
+
     /* .mobile-cart {
         display: none;
     } */
 }
 
 @media (min-width: 901px) and (max-width: 1300px) {
+
+    header {
+        height: 80px;
+    }
 
     header .icons {
         gap: 2vw;
@@ -262,6 +296,7 @@ body {
         border: none;
         background: none;
         transition: all 0.3s;
+        
     }
 
     header .cart:hover,
@@ -273,15 +308,23 @@ body {
         top: 60px;
     }
 
-    .mobile-cart,
-    .mobile-user  {
-        display: none;
-    }
-
     header .search {
         height: 50px;
         background-size: 40px;
-        padding-left: 45px;
+        padding-left: 50px;
+    }
+
+    .search input {
+        font-size: 30px;
+    }
+
+    header .search input::placeholder {
+        font-size: 30px;
+    }
+
+    .mobile-cart:hover,
+    .mobile-user:hover {
+        box-shadow: 1px 2px 10px #313131;
     }
 
     header .burger {
@@ -326,14 +369,48 @@ body {
         transform: translateY(-13px) 
         rotate(-45deg);
     }
+
+    header .menu {
+        top: 90px;
+    }
+
+    .mobile-cart,
+    .mobile-user {
+        border: 2px solid black;
+        border-radius: 20px;
+        height: 60px;
+    }
 }
 
 @media (min-width: 1301px) {
+
+    header{
+        height: 120px;
+    }
+
+    .logo h2 {
+        font-size: 5vw;
+    }
+
+
     header .search {
         height: 60px;
         background-size: 50px;
-        padding-left: 55px;
+        padding-left: 65px;
     }
+
+    .search input {
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+        font-size: 40px;
+
+    }
+
+    header .search input::placeholder {
+        font-size: 35px;
+    }
+
 
     header .icons {
         gap: 2vw;
@@ -357,7 +434,7 @@ body {
     }
 
     header .menu {
-        top: 80px;
+        top: 110px;
         width: auto;
     }
 
@@ -409,6 +486,10 @@ body {
     .mobile-user {
         padding: 0 15px;
         transition: all 0.4s;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 20px;
+        height: 70px;
     }
 
     .mobile-cart:hover,
@@ -418,19 +499,25 @@ body {
 
     .mobile-cart img,
     .mobile-user img{
-        width: 40px;
+        width: 60px;
+    }
+
+    .mobile-cart span,
+    .mobile-user span {
+        font-size: 25px;
     }
 
 
     button.light {
-        height: 45px;
+        height: 70px;
+        width: 170px;
         font-size: 20px;
     }
 
     button.dark {
-        height: 45px;
+        height: 70px;
+        width: 170px;
         font-size: 20px;
     }
-
 
 }
