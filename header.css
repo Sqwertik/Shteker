@@ -169,7 +169,7 @@ body {
         flex-direction: column;
         padding: 20px 20px;
         gap: 30px;
-        width: 180px;
+        width: 185px;
         transition: 0.4s;
         opacity: 0;
     }
@@ -186,18 +186,23 @@ body {
         justify-content: left;
         align-items: center;
         transition: all 0.4s;
+        border: 2px solid black;
+        border-radius: 20px;
+        height: 50px;
+        width: 152px;
         
     }
 
     .mobile-cart:hover,
     .mobile-user:hover {
         transform: scale(1.1);
+        box-shadow: 1px 2px 10px #313131;
     }
 
     .mobile-cart img,
     .mobile-user img {
-        width: 40px;
-        margin-right: 5px; 
+        width: 35px;
+        margin-left: 7px; 
     }
 
     .mobile-cart span,
@@ -266,11 +271,6 @@ body {
         top: 60px;
     }
 
-    .mobile-cart,
-    .mobile-user {
-        border: none;
-    }
-
     /* .mobile-cart {
         display: none;
     } */
@@ -280,6 +280,10 @@ body {
 
     header {
         height: 80px;
+    }
+
+    .logo h2 {
+        font-size: 5vw;
     }
 
     header .icons {
