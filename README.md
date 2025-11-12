@@ -1,0 +1,1 @@
+This is a project similar to an electronics website. It uses technologies like HTML5, CSS, and JavaScript. Current plans include creating a custom website using HTML5 and CSS, as well as implementing minimal JavaScript functionality to make the site more user-friendly and complete.
