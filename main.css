@@ -1,0 +1,319 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jua", sans-serif;
+}
+
+
+body.dark .promotion {
+    color: #000;
+}
+
+body.dark .promotion .promotion h2 {
+    color: #fff;
+    transition: all 0.8s;
+}
+
+.container {
+    margin: 0 6.6vw;
+}
+
+div.promotion div.promotion {
+    background-color: #A7A7A7;
+    border-radius: 20px;
+    width: 38.4vw;
+    height: 40px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.promotion div.promotion h2 {
+    font-size: 5.1vw;
+}
+
+.iphone, 
+.macbook,
+.headphone {
+    background-color: #A7A7A7;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iphone img,
+.macbook img,
+.headphone img {
+    width: 130px;
+    margin: 13px 13px;
+}
+
+.iphone div.text,
+.macbook div.text,
+.headphone div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 13px;
+    margin-right: 15px;
+}
+
+div.name,
+div.price,
+div.more {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 175px;
+}
+
+.iphone div.name,
+.macbook div.name,
+.headphone div.name {
+    width: 44.8vw;
+}
+
+.iphone div.name h2,
+.macbook div.name h2,
+.headphone div.name h2 {
+    font-size: 20px;
+}
+
+.iphone div.price,
+.macbook div.price,
+.headphone div.price {
+    width: 23vw;
+}
+
+.iphone div.price h3,
+.macbook div.price h3,
+.headphone div.price h3{
+    font-size: 18px;
+}
+
+.iphone div.more,
+.macbook div.more,
+.headphone div.more {
+    width: 38.4vw;
+}
+
+.iphone div.more h4,
+.macbook div.more h4,
+.headphone div.more h4 {
+    font-size: 18px;
+}
+
+
+.macbook, .headphone {
+    margin-top: 35px;
+}
+
+
+img.preview {
+    margin-top: 30px;
+}
+
+
+div.bestseller {
+    background-color: #A7A7A7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 35px;
+}
+
+.bestseller h2 {
+    font-size: 5vw;
+}
+
+.first-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.t3-and-4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.apple-watch-10, 
+.apple-watch,
+.beats {
+    background-color: #A7A7A7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 160px;
+}
+
+.apple-watch-10 img, 
+.apple-watch img
+.beats img {
+    width: 140px;
+    margin-top: 10px;
+}
+
+.apple-watch-10 .text, 
+.apple-watch .text,
+.beats .text  {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 12px;
+    width: 140px;
+}
+
+.apple-watch-10 .name, 
+.apple-watch .name,
+.beats .name {
+    background-color: #A7A7A7;
+    width: 121px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apple-watch-10 .name h4, 
+.apple-watch .name h4,
+.beats .name h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.price-and-cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.apple-watch-10 .price, 
+.apple-watch .price,
+.beats .price {
+    background-color: #A7A7A7;
+    width: 80px;
+}
+
+.apple-watch-10 .price h4, 
+.apple-watch .price h4,
+.beats .price h4 {
+    font-size: 25px;
+}
+
+.apple-watch-10 .cart, 
+.apple-watch .cart,
+.beats .cart {
+    background-color: #A7A7A7;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apple-watch-10 .cart img, 
+.apple-watch .cart img,
+.beats .cart img {
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+
+
+
+.apple-cabel {
+    background-color: #A7A7A7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 160px;
+}
+
+.apple-cabel img {
+    width: 140px;
+    margin-top: 10px;
+}
+
+.apple-cabel .text  {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 12px;
+    width: 140px;
+}
+
+.apple-cabel .name {
+    background-color: #A7A7A7;
+    width: 121px;
+    margin: 10px;
+    margin-bottom: 10px;
+
+}
+
+.apple-cabel .name h4 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.price-and-cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.apple-cabel .price {
+    background-color: #A7A7A7;
+    width: 80px;
+
+}
+
+.apple-cabel .price h4 {
+    font-size: 25px;
+}
+
+.apple-cabel .cart {
+    background-color: #A7A7A7;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apple-cabel .cart img {
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+
+.apple-watch img {
+    margin-top: 13px;
+    width: 140px;
+}
+
+
+.apple-watch .cart img {
+    margin: 0;
+}
+
+.beats img {
+    width: 140px;
+    margin-top: 13px;
+}
+
+.beats .cart img {
+    margin: 0;
+}

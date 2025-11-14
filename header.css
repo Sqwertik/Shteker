@@ -17,6 +17,9 @@ body {
     background-color: #fff;
     color: #000;
     transition: all 0.8s;
+    width: 100%;
+    font-size: 30px;
+    font-family: "Jua", sans-serif;
 }
 
 body.dark {
@@ -25,15 +28,21 @@ body.dark {
     transition: all 0.8s;
 }
 
+body.dark .search input::placeholder {
+    color: #d3d3d3;
+    transition: all 0.8s;
+}
+
+body.dark .search input {
+    color: #fff;
+    transition: all 0.8s;
+}
+
 button, a {
     -webkit-tap-highlight-color: transparent;
 }
 
-body {
-        width: 100%;
-        font-size: 30px;
-        font-family: "Jua", sans-serif;
-    }
+
 
     header  {
         width: 100%;
@@ -83,6 +92,12 @@ body {
         margin-left: 0px;
         border: 1px solid black;
         outline: none;
+        transition: all 0.;
+    }
+
+    .search input::placeholder {
+        transition: all 0.8s;
+        color: #636363;
     }
 
     .icons {
@@ -186,7 +201,7 @@ body {
         justify-content: left;
         align-items: center;
         transition: all 0.4s;
-        border: 2px solid black;
+        /* border: 2px solid #8a8a8a; */
         border-radius: 20px;
         height: 50px;
         width: 152px;
@@ -380,7 +395,7 @@ body {
 
     .mobile-cart,
     .mobile-user {
-        border: 2px solid black;
+        /* border: 2px solid #8a8a8a; */
         border-radius: 20px;
         height: 60px;
     }
@@ -491,7 +506,7 @@ body {
         padding: 0 15px;
         transition: all 0.4s;
         width: 200px;
-        border: 2px solid black;
+        /* border: 2px solid #8a8a8a; */
         border-radius: 20px;
         height: 70px;
     }
