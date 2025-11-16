@@ -2,6 +2,14 @@ const burgerBtn = document.getElementById('burgerBtn');
 const menu = document.getElementById('menu');
 const changeItem = document.getElementById('changeItem');
 const placeholder = document.getElementById('placeholder');
+const userBtn = document.querySelector('.user-btn');
+const savedName = localStorage.getItem('username');
+
+if (savedName) {
+    userBtn.textContent = savedName;
+} else {
+    userBtn.textContent = 'Логин';
+}
 
 burgerBtn.addEventListener('click', () =>
 {
